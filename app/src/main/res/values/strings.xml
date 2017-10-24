@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SQLiteDemo</string>
+
+    <string name="detail_name">Fullname</string>
+    <string name="detail_phone">Phone Number</string>
+    <string name="detail_address">Address</string>
+    <string name="detail_gender">Gender</string>
+    <string name="detail_date">Date</string>
+    <string name="detail_time">Time</string>
 </resources>

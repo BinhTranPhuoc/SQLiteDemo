@@ -3,9 +3,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginRight="8dp"
-    android:layout_marginLeft="8dp"
-    android:paddingTop="10dp">
+    android:layout_marginRight="@dimen/add_margin"
+    android:layout_marginLeft="@dimen/add_margin"
+    android:paddingTop="@dimen/add_padding">
 
     <LinearLayout
         android:id="@+id/ln1"
@@ -16,10 +16,11 @@
         <EditText
             android:id="@+id/edtuser"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="UserName"
+            android:layout_height="@dimen/edt_height"
             android:background="@drawable/border"
-            android:paddingLeft="10dp"/>
+            android:hint="UserName"
+            android:paddingLeft="@dimen/add_padding" />
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
@@ -27,10 +28,11 @@
         <EditText
             android:id="@+id/edtphone"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Phone"
+            android:layout_height="@dimen/edt_height"
             android:background="@drawable/border"
-            android:paddingLeft="10dp"/>
+            android:hint="Phone"
+            android:inputType="number"
+            android:paddingLeft="@dimen/add_padding" />
 
         <Space
             android:layout_width="match_parent"
@@ -39,10 +41,10 @@
         <EditText
             android:id="@+id/edtaddress"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Address"
+            android:layout_height="@dimen/edt_height"
             android:background="@drawable/border"
-            android:paddingLeft="10dp"/>
+            android:hint="Address"
+            android:paddingLeft="@dimen/add_padding" />
 
         <Space
             android:layout_width="match_parent"
@@ -50,40 +52,40 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:weightSum="4"
-            android:background="@drawable/border">
+            android:layout_height="@dimen/edt_height"
+            android:background="@drawable/border"
+            android:weightSum="4">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gender"
                 android:layout_gravity="center"
-                android:textSize="18sp"
                 android:layout_weight="1"
-                android:paddingLeft="10dp"/>
+                android:paddingLeft="10dp"
+                android:text="Gender"
+                android:textSize="@dimen/add_text_size" />
 
             <RadioGroup
                 android:id="@+id/rbGender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_gravity="center"
-                android:layout_weight="3">
+                android:layout_weight="3"
+                android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/male"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Male"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Male" />
 
                 <RadioButton
                     android:id="@+id/female"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Female"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Female" />
 
             </RadioGroup>
         </LinearLayout>
@@ -111,8 +113,8 @@
             android:id="@+id/btnCancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="cancel"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="cancel" />
     </LinearLayout>
 
 </LinearLayout>

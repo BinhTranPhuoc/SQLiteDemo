@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/deleteAll"
         android:title="Delete All"/>
     <item
-        android:id="@+id/contactAdd"
-        android:icon="@drawable/add_user"
+        android:id="@+id/addContact"
+        android:icon="@drawable/add"
         android:orderInCategory="100"
-        android:title="Add contact"/>
+        android:title="Add contact"
+        app:showAsAction="always"/>
 </menu>

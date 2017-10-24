@@ -42,7 +42,7 @@ public class Contact implements Serializable {
     public void setNumber(String number) {this.number = number;}
 
     public String getAddress() {return address;}
-    public void setAddress(String s) {this.address = address;}
+    public void setAddress(String address) {this.address = address;}
 
     public  String getDate() {return date;}
     public void setDate(String date) {this.date = date;}
